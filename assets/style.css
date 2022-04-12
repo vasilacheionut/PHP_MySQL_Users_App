@@ -1,0 +1,23 @@
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+}
+
+#register .container #login-row #login-column #login-box {
+    margin-top: 60px;
+    max-width: 600px;
+    height: 320px;
+}
+
+.up-space {
+    margin-top: 80px;
+}
+
+.down-space {
+    margin-bottom: 20px;
+}
+
+img.w100 {
+    width: -webkit-fill-available;
+}
