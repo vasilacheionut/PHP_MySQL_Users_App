@@ -6,6 +6,8 @@ include "header.php";
 $location = 'profile.php';
 $id = $user->getId();
 $result_array = $user->read_single($id);
+$oldPassword = '';
+$newPassword = '';
 
 if (isset($_POST['file'])) {
     $image = $_POST['file'];
