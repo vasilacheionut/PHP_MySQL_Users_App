@@ -10,8 +10,9 @@
         <th scope="col">Hash Password</th>
         <?php if ($user->getRole() == 2) : ?>
           <th scope="col" colspan="2"></th>
-        <?php else: ?>
-          <th scope="col"></th>          
+        <?php elseif ($user->is_login() && $select == 1): ?>
+          <th scope="col"></th>             
+        <?php else: ?>                 
         <?php endif; ?>
 
       </tr>
