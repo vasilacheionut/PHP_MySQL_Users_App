@@ -20,6 +20,7 @@ if (isset($_POST['update_image'])) {
 
 if (isset($_POST['save_user'])) {
     $oldPassword = hash('sha256', $_POST['oldPassword']);
+    $newPassword = $_POST['newPassword'];
     if ($user->verifyHashPassword($id, $_POST['oldPassword'])) {
         $newPassword = $_POST['newPassword'];
         $user->updatePassword($id, $newPassword);

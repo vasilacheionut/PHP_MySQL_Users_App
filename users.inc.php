@@ -8,9 +8,12 @@
         <th scope="col">Display Name</th>
         <th scope="col">Email</th>
         <th scope="col">Hash Password</th>
-        <?php if ($user->is_login()) : ?>
+        <?php if ($user->getRole() == 2) : ?>
           <th scope="col" colspan="2"></th>
+        <?php else: ?>
+          <th scope="col"></th>          
         <?php endif; ?>
+
       </tr>
     </thead>
     <tbody>
