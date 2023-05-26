@@ -21,13 +21,6 @@ class Database extends mysqli
     $this->password   = PASSWORD;
     $this->dbname     = DBNAME;
 
-    // Connection to MySQL server
-    $this->conn = new mysqli($this->servername, $this->username, $this->password);
-
-    // Create database if not exists
-    $sql = "CREATE DATABASE IF NOT EXISTS $this->dbname";
-    $this->conn->query($sql);
-
     // Connection to MySQL server and Database
     $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
 
